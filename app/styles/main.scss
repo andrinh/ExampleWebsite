@@ -12,6 +12,25 @@ $icon-font-path: '../fonts/';
 }
 
 /* Mobile first views */
+.web-nav {
+  width: 20%;
+  height: 100%;
+  overflow: auto;
+  float: left;
+  z-index: 20;
+  position: fixed;
+  left: 0px;
+  background-color: #363535;
+  min-height: 600px;
+}
+
+.content {
+  float: right;
+  width: 80%;
+  min-height: 100%;
+  position: relative;
+}
+
 .header,
 .footer {
   background-color: #3b3b3b;
