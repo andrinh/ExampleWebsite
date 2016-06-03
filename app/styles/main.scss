@@ -27,8 +27,9 @@ $icon-font-path: '../fonts/';
 .content {
   float: right;
   width: 80%;
-  min-height: 100%;
   position: relative;
+  min-height: 100%;
+  overflow: auto;
 }
 
 .header,
@@ -53,6 +54,9 @@ $icon-font-path: '../fonts/';
   padding-top: 19px;
   color: #777;
   border-top: 1px solid #e5e5e5;
+  position:fixed;
+  bottom:0px;
+  width:100%;
 }
 
 /* Responsive: Portrait tablets and up */
