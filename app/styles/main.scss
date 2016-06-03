@@ -36,6 +36,23 @@ $icon-font-path: '../fonts/';
   background-color: #363535;
   min-height: 600px;
   opacity: 0.9;
+  .menu {
+    text-align: right;
+    list-style-type: none;
+    margin-right: 40px;
+    float: right;
+    font-size: 22px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    li {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      a {
+        color: #fff;
+      }
+    }
+  }
 }
 
 .content {
@@ -50,10 +67,11 @@ $icon-font-path: '../fonts/';
 .footer {
   background-color: #404040;
   opacity: 0.9;
+  color: #FFF;
 }
 
 .header {
-  h3 {
+  h2 {
     margin-top: 0;
     margin-bottom: 0;
     line-height: 40px;
@@ -63,7 +81,6 @@ $icon-font-path: '../fonts/';
 
 .footer {
   padding: 10px;
-  color: #777;
   position:fixed;
   bottom:0px;
   width:100%;
