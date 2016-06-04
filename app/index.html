@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html class="no-js" lang="" ng-app="exampleWebpage">
   <head>
     <meta charset="utf-8">
     <meta name="description" content="">
@@ -53,27 +53,30 @@
       </div>
 
       <div class="module">
-        <form name="reviewForm">
+        <form name="reviewForm" ng-controller="InformationController as informationCtrl" ng-submit="reviewForm.$valid && informationCtrl.addInformation()" novalidate>
           <h3>Submit Information</h3>
           <fieldset class="form-group">
             <h4>Name</h4>
-            <input ng-model="information.name" class="form-control" title="Name" />
+            <input ng-model="informationCtrl.information.name" class="form-control" title="Name" required/>
           </fieldset>
           <fieldset class="form-group">
             <h4>Email</h4>
-            <input ng-model="information.email" type="email" class="form-control" title="Email" />
+            <input ng-model="informationCtrl.information.email" type="email" class="form-control" title="Email" required/>
           </fieldset>
           <fieldset class="form-group">
-            <h4>Address</h4>
-            <input ng-model="information.address" class="form-control" title="Address" />
+            <h4>Address Details</h4>
+            <input ng-model="informationCtrl.information.addressDetails.address" class="form-control address-fields" placeholder="Address" title="Address" />
+            <input ng-model="informationCtrl.information.addressDetails.city" class="form-control address-fields" placeholder="City" title="City" />
+            <input ng-model="informationCtrl.information.addressDetails.province" class="form-control address-fields" placeholder="Province/State" title="province" />
+            <input ng-model="informationCtrl.information.addressDetails.country" class="form-control address-fields" placeholder="Country" title="Address" />
           </fieldset>
           <fieldset class="form-group">
             <h4>Postal Code</h4>
-            <input ng-model="information.postalCode" class="form-control" title="Postal_Code" />
+            <input ng-model="informationCtrl.information.postalCode" class="form-control" title="Postal_Code" />
           </fieldset>
           <fieldset class="form-group">
             <h4>Telephone Number</h4>
-            <input ng-model="information.telephoneNumber" type="tel" class="form-control" title="Telephone_Number" />
+            <input ng-model="informationCtrl.information.telephoneNumber" type="tel" class="form-control" title="Telephone_Number" />
           </fieldset>
           <fieldset class="form-group no-margin">
             <input type="submit" class="btn btn-primary pull-right" value="Submit Review" />
@@ -121,6 +124,7 @@
     
     <!-- build:js scripts/main.js -->
     <script src="scripts/main.js"></script>
+    <script src="scripts/app.js"></script>
     <!-- endbuild -->
   </body>
 </html>

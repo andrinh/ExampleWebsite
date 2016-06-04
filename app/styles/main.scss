@@ -15,6 +15,14 @@ $icon-font-path: '../fonts/';
   margin: 0;
 }
 
+.ng-invalid {
+  border-color: #FA787E;
+}
+
+.ng-valid.ng-dirty {
+  border-color: #78FA89;
+}
+
 /* Mobile first views */
 .background {
   position: fixed; 
@@ -81,6 +89,9 @@ $icon-font-path: '../fonts/';
   h4 {
     margin-top: 0;
     color: #FFFFFF;
+  }
+  .address-fields {
+    margin-bottom: 5px;
   }
 }
 
