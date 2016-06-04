@@ -53,7 +53,32 @@
       </div>
 
       <div class="module">
-        
+        <form name="reviewForm">
+          <h3>Submit Information</h3>
+          <fieldset class="form-group">
+            <h4>Name</h4>
+            <input ng-model="information.name" class="form-control" title="Name" />
+          </fieldset>
+          <fieldset class="form-group">
+            <h4>Email</h4>
+            <input ng-model="information.email" type="email" class="form-control" title="Email" />
+          </fieldset>
+          <fieldset class="form-group">
+            <h4>Address</h4>
+            <input ng-model="information.address" class="form-control" title="Address" />
+          </fieldset>
+          <fieldset class="form-group">
+            <h4>Postal Code</h4>
+            <input ng-model="information.postalCode" class="form-control" title="Postal_Code" />
+          </fieldset>
+          <fieldset class="form-group">
+            <h4>Telephone Number</h4>
+            <input ng-model="information.telephoneNumber" type="tel" class="form-control" title="Telephone_Number" />
+          </fieldset>
+          <fieldset class="form-group no-margin">
+            <input type="submit" class="btn btn-primary pull-right" value="Submit Review" />
+          </fieldset>
+        </form>
       </div>
       
 
