@@ -8,9 +8,12 @@
     };
 
     this.isCanada = function() {
-      boolean isCanada = false;
-      if (this.information.addressDetails.province.countrytoLowerCase() === "canada") {
+      var isCanada = false;
+      console.log(this.information.addressDetails.country.toLowerCase());
+      if (this.information.addressDetails.country.toLowerCase() === "canada") {
         isCanada = true;
+      } else {
+        isCanada = false;
       }
       return isCanada;
     }

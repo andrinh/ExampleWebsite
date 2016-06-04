@@ -67,16 +67,16 @@
             <h4>Address Details</h4>
             <input ng-model="informationCtrl.information.addressDetails.address" class="form-control address-fields" placeholder="Address" title="Address" />
             <input ng-model="informationCtrl.information.addressDetails.city" class="form-control address-fields" placeholder="City" title="City" />
-            <input ng-model="informationCtrl.information.addressDetails.province" class="form-control address-fields" placeholder="Province/State" title="province" />
-            <input ng-model="informationCtrl.information.addressDetails.country" class="form-control address-fields" placeholder="Country" title="Address" />
+            <input ng-model="informationCtrl.information.addressDetails.province" class="form-control address-fields" placeholder="Province/State" title="Province" />
+            <input ng-model="informationCtrl.information.addressDetails.country" class="form-control address-fields" placeholder="Country" title="Country" />
           </fieldset>
           <fieldset class="form-group" ng-if="informationCtrl.isCanada()" ng-cloak>
             <h4>Postal Code</h4>
-            <input ng-model="informationCtrl.information.postalCode" class="form-control" title="Postal_Code" />
+            <input ng-model="informationCtrl.information.addressDetails.postalCode" class="form-control" title="Postal Code" />
           </fieldset>
           <fieldset class="form-group">
             <h4>Telephone Number</h4>
-            <input ng-model="informationCtrl.information.telephoneNumber" type="tel" class="form-control" title="Telephone_Number" />
+            <input ng-model="informationCtrl.information.telephoneNumber" type="tel" class="form-control" title="Telephone Number" />
           </fieldset>
           <fieldset class="form-group no-margin">
             <input type="submit" class="btn btn-primary pull-right" value="Submit Review" />
