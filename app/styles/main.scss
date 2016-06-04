@@ -33,7 +33,7 @@ $icon-font-path: '../fonts/';
   z-index: 20;
   position: fixed;
   left: 0px;
-  background-color: #363535;
+  background-color: #272A3A;
   min-height: 600px;
   opacity: 0.9;
   .menu {
@@ -63,9 +63,16 @@ $icon-font-path: '../fonts/';
   overflow: auto;
 }
 
+.module {
+  width: 500px;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
 .header,
 .footer {
-  background-color: #404040;
+  background-color: #32354A;
   opacity: 0.9;
   color: #FFF;
 }
